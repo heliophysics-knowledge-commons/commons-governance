@@ -1,0 +1,55 @@
+name: Heliophysics Glossary Harmonization
+short_name: helio-glossary-harmonization
+
+repo_url: https://github.com/rmcgranaghan/Helio-KNOW
+
+description: >
+  A project to harmonize heliophysics terminology across multiple semantic
+  resources using both manual and automated approaches. Produces a structured
+  dictionary and mappings between vocabularies.
+
+leads:
+  - name: Ryan McGranaghan
+    affiliation: NASA JPL
+
+status: active
+stage: 1  # Active Community Project
+
+domains:
+  - heliophysics
+  - semantic-technologies
+
+contributes_to:
+  - meaning
+  - interoperability
+
+artifacts:
+  - type: dataset
+    name: full_terms_longform
+    path: tools/ADS_enrichment/data/full_terms_longform.csv
+
+  - type: dataset
+    name: harmonization_terms
+    path: tools/ADS_enrichment/data/harmonization_terms_with_categories.csv
+
+  - type: dataset
+    name: top_terms
+    path: tools/ADS_enrichment/data/harmonization_top100_initial_focus.csv
+
+  - type: code
+    name: definition_ingestion_pipeline
+    path: tools/ADS_enrichment/add_definitions_to_terms.ipynb
+
+external_connections:
+  - SPASE
+  - UAT
+  - SWEET
+  - ADS
+
+tags:
+  - glossary
+  - ontology
+  - harmonization
+  - knowledge-commons
+
+last_updated: 2026-04-15
