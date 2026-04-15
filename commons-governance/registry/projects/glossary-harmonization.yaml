@@ -40,7 +40,7 @@ artifacts:
     name: definition_ingestion_pipeline
     path: tools/ADS_enrichment/add_definitions_to_terms.ipynb
 
-external_connections:
+connects_to:
   - SPASE
   - UAT
   - SWEET
